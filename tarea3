@@ -1,0 +1,21 @@
+colores=["rojo","verde","azul"]
+colores.append("amarillo")
+print(colores)
+colores.insert(1,"morado")
+print(colores)
+print(colores[1])
+colores2=colores[2:4]
+print(colores2)
+colores3="Python es divertido"
+colores4=colores3.split()
+print(colores4)
+lista=[2,4,5,6,9,10]
+cuadrados=[n**2 for n in lista]
+print(cuadrados)
+
+for x in lista:
+    c=x**2
+    cuadrados.append(c)
+print(cuadrados)
+
+

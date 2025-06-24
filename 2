@@ -1,0 +1,22 @@
+libros=[{"<Titulo":"Finanzas","autor":"Pedro","precio":50.00,"stock":20},
+        {"<Titulo":"Dunne","autor":"Frank Herbert","precio":11.99,"stock":50},
+        {"<Titulo":"La casa de los espiritus","autor":"Isabel Allende","precio":20.00,"stock":30},
+        {"<Titulo":"Biblia","autor":"Varios","precio":200.00,"stock":25},        
+        {"<Titulo":"100 años de soledad","autor":"GGM","precio":25.00,"stock":10}]
+print(libros)
+
+#Control de flujo
+def mostrar_libros_disponibles():
+    for libro in libros:
+        if libro.get("stock") >1:
+            print(libro)
+
+mostrar_libros_disponibles()
+
+#condiciones y operaciones
+minimo=float(input("Ingrese el precio minimo: "))
+maximo=float(input("Ingrese el precio maximo: "))
+
+for libro in libros:
+    if libro.get("precio") >= minimo and libro.get("precio") <= maximo:
+       print(libro)
